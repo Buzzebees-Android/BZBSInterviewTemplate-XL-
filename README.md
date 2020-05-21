@@ -1,45 +1,72 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+# ข้อสอบ Android Developer 2020
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
+## รายละเอียดข้อสอบ
+* ระยะเวลาทำข้อสอบ 2 วัน
+* สร้างแอปพลิเคชันตาม Requirements ที่กำหนดให้
+* ผู้สมัครต้องสร้าง Project ด้วยตนเอง
+* แอปพลิเคชันจะต้องใช้งานได้อย่างสมบูรณ์ ไม่ crash
+* อนุญาตให้ใช้ Third Party Library ได้ตามสะดวก
+* อนุญาตให้ใช้ Pattern MVP/MVVM ในการเขียนเท่านั้น
+* หากสามารถใช้ Library เหล่านี้จะได้ จะพิจารณาเป็นพิเศษ 
+    * Kotlin Coroutine
+    * Koin
+    * Dagger
+    * Jetpack Components ต่าง ๆ
+* หากสามารถเขียน Unit test ได้ จะพิจารณาเป็นพิเศษ (หากเวลาเหลือ)
+* ผู้สมัครควรมีความเข้าใจใน Code ที่ตนเองเขียน
 
----
 
-## Edit a file
+## Requirement
 
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
+แอปพลิเคชันประกอบไปด้วย
+* Login Screen
+* Dashboard Screen
+* Campaign List Screen
+* Favourite Screen
+* Detail Screen
 
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
+### Login Screen
 
----
+ประกอบด้วย
 
-## Create a file
+1. Username - ต้องกรอก
+2. Password - ต้องกรอก
+3. Login - หาก username และ password เป็นค่าว่าง จะต้อง alert ออกมาด้วย
 
-Next, you’ll add a new file to this repository.
+อนุญาติให้ทำ Fake Login ได้ แต่หาก Login เข้าไปแล้ว หลังจากเปิดแอปมาใหม่ต้องไม่ผ่านหน้า Login อีกต่อไปแล้ว
 
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
+### Dashboard Screen
 
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
+เป็น Dynamic Content โดยรเรียก JSON จาก url 
 
----
+https://firebasestorage.googleapis.com/v0/b/android-interview-test.appspot.com/o/dashboard.json?alt=media&token=48371953-a998-4613-8791-e00c976335a2
 
-## Clone a repository
+ประกอบไปด้วย 
 
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
+* small campaign rotate
+* big campaign rotate
+* header
+* small campaign 
+* big campaign
 
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
+คลิกที่ไอเทมแต่ละอันจะเปิดหน้า Detail
 
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+### Campaign List Screen
+
+เป็น Dynamic Content โดยรเรียก JSON จาก url 
+
+https://xxxxxxxxxxxxxx
+
+คลิกที่ไอเทมแต่ละอันจะเปิดหน้า Detail
+
+### Detail Screen
+
+แสดงรายละเอียด Campaign ที่คลิกมาจากหน้า Dashboard หรือ Campaign List
+สามารถกด Favourite ได้
+
+Campaign ที่เป็น Favourite จะไปปรากฎที่หน้า Favourite Screen
+
+### Favourite Screen
+
+แสดงรายการ Campaign ทีเป็น Favourite
