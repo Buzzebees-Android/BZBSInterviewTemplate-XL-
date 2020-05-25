@@ -81,6 +81,6 @@ Campaign ที่เป็น Favourite จะไปปรากฎที่ห
 ## Submission process
   You can use this repository while you are developing the app. 
   
-  To submit the test assignment please **close the issue "Assignment Done" in "issues" tab**.
+  To submit the test assignment please **Pull requests in "Pull request" tab**.
   
-  We will review the code **only after you close "Assignment Done" issue**.
+  We will review the code **only after you Pull request**.
