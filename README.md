@@ -43,6 +43,7 @@ GET https://firebasestorage.googleapis.com/v0/b/android-interview-test.appspot.c
 
 ## Application requirements
 ### Dashboard Screen
+```
 ประกอบไปด้วย 
 
 * small campaign rotate
@@ -50,19 +51,21 @@ GET https://firebasestorage.googleapis.com/v0/b/android-interview-test.appspot.c
 * header
 * small campaign 
 * big campaign
+```
 
 คลิกที่ไอเทมแต่ละอันจะเปิดหน้า Detail
 
 ### Campaign List Screen
-
+```
 เป็น Dynamic Content โดยรเรียก JSON จาก url 
 
 https://xxxxxxxxxxxxxx
 
 คลิกที่ไอเทมแต่ละอันจะเปิดหน้า Detail
+```
 
 ### Detail Screen
-
+```
 แสดงรายละเอียด Campaign ที่คลิกมาจากหน้า Dashboard หรือ Campaign List
 สามารถกด Favourite ได้
 
@@ -71,6 +74,7 @@ Campaign ที่เป็น Favourite จะไปปรากฎที่ห
 ### Favourite Screen
 
 แสดงรายการ Campaign ทีเป็น Favourite
+```
 
 
 ## Submission process
