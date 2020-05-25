@@ -42,7 +42,7 @@ GET https://firebasestorage.googleapis.com/v0/b/android-interview-test.appspot.c
  * **[Bonus]** Having Jetpack Components but not required
 
 ## Application requirements
-* ### Dashboard Screen
+### Dashboard Screen
 ประกอบไปด้วย 
 
 * small campaign rotate
@@ -53,7 +53,7 @@ GET https://firebasestorage.googleapis.com/v0/b/android-interview-test.appspot.c
 
 คลิกที่ไอเทมแต่ละอันจะเปิดหน้า Detail
 
-* ### Campaign List Screen
+### Campaign List Screen
 
 เป็น Dynamic Content โดยรเรียก JSON จาก url 
 
