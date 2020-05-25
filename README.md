@@ -42,14 +42,6 @@ GET https://firebasestorage.googleapis.com/v0/b/android-interview-test.appspot.c
  * **[Bonus]** Having Jetpack Components but not required
 
 ## Application requirements
-
-แอปพลิเคชันประกอบไปด้วย
- * Login Screen
- * Dashboard Screen
- * Campaign List Screen
- * Favourite Screen
- * Detail Screen
-
 ### Dashboard Screen
 
 เป็น Dynamic Content โดยรเรียก JSON จาก url 
