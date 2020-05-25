@@ -13,14 +13,13 @@ Your task is to create the campaign list screen. The top section shows the page'
 [Bonus] The app should support both landscape and portrait modes. You can use the screenshots below as a reference.
 
 **[Important]** Your final UI can look different, but it should include the same information as on the screenshots.
-
-<img src="screenshots/1.png" width="40%"/><img width="10%"/><img src="screenshots/2.png" width="40%"/>
-
-<img src="screenshots/3.png" width="40%"/><img width="10%"/><img src="screenshots/4.png" width="40%"/> 
+```
+https://www.figma.com/file/F5bUJNmMG4XwXucXfad1xW/Untitled?node-id=0%3A1
+```
 
 ## API details
 
-To get the Dashboard information, please use 
+To get the dashboard, please use 
 ```
 GET https://firebasestorage.googleapis.com/v0/b/android-interview-test.appspot.com/o/dashboard.json?alt=media&token=48371953-a998-4613-8791-e00c976335a2
 ```
