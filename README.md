@@ -44,10 +44,6 @@ GET https://firebasestorage.googleapis.com/v0/b/android-interview-test.appspot.c
 ## Application requirements
 ### Dashboard Screen
 
-เป็น Dynamic Content โดยรเรียก JSON จาก url 
-
-https://firebasestorage.googleapis.com/v0/b/android-interview-test.appspot.com/o/dashboard.json?alt=media&token=48371953-a998-4613-8791-e00c976335a2
-
 ประกอบไปด้วย 
 
 * small campaign rotate
