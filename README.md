@@ -1,20 +1,53 @@
-# ข้อสอบ Android Developer 2020
+# BuzzeBees Android Assignment 
 
+## Deadline : (01/06/20)
+## Confidental
+Please don't disclose this assignment with anyone. 
 
-## รายละเอียดข้อสอบ
-* ระยะเวลาทำข้อสอบ 2 วัน
-* สร้างแอปพลิเคชันตาม Requirements ที่กำหนดให้
-* ผู้สมัครต้องสร้าง Project ด้วยตนเอง
-* แอปพลิเคชันจะต้องใช้งานได้อย่างสมบูรณ์ ไม่ crash
-* อนุญาตให้ใช้ Third Party Library ได้ตามสะดวก
-* อนุญาตให้ใช้ Pattern MVP/MVVM ในการเขียนเท่านั้น
-* หากสามารถใช้ Library เหล่านี้จะได้ จะพิจารณาเป็นพิเศษ 
-    * Kotlin Coroutine
-    * Koin
-    * Dagger
-    * Jetpack Components ต่าง ๆ
-* หากสามารถเขียน Unit test ได้ จะพิจารณาเป็นพิเศษ (หากเวลาเหลือ)
-* ผู้สมัครควรมีความเข้าใจใน Code ที่ตนเองเขียน
+## Story and Goals
+We plan to launch a privilege app. Your responsibility is to create the project's base structure. It's going to be a long term project so the structure should be flexible, easy to understand and easy to be supported by your team members. Since we are making a high-quality application, we should handle all possible cases properly (no internet connection, showing loading progress)
+
+## Your task
+Your task is to create the campaign list screen. The top section shows the page's name and the bottom part shows the tabbar. Before you get the response from API, you need to show the loading progress. In case of any connection issue, you need to show a no connection screen that includes the "no connection" image, message and "try again" button. By clicking on "try again" button, it will load the data again.
+
+[Bonus] The app should support both landscape and portrait modes. You can use the screenshots below as a reference.
+
+**[Important]** Your final UI can look different, but it should include the same information as on the screenshots.
+
+<img src="screenshots/1.png" width="40%"/><img width="10%"/><img src="screenshots/2.png" width="40%"/>
+
+<img src="screenshots/3.png" width="40%"/><img width="10%"/><img src="screenshots/4.png" width="40%"/> 
+
+## API details
+
+To get the Dashboard information, please use 
+```
+GET https://firebasestorage.googleapis.com/v0/b/android-interview-test.appspot.com/o/dashboard.json?alt=media&token=48371953-a998-4613-8791-e00c976335a2
+```
+
+To get the campaign list, please use
+```
+GET https://firebasestorage.googleapis.com/v0/b/android-interview-test.appspot.com/o/dashboard.json?alt=media&token=48371953-a998-4613-8791-e00c976335a2
+```
+
+## Code requirements
+ * The app must be written in Kotlin only
+ * We prefer MVVM architecture, but you can use MVP
+ * We prefer to use a dependency injection framework
+ * We prefer scalable, maintainable and testable code
+ * Having Unit tests would be a plus but not required
+ * Having database cache would be a plus but not required
+ * [Bonus] Having Kotlin Coroutine but not required
+ * [Bonus] Having Koin but not required
+ * [Bonus] Having Dagger but not required
+ * [Bonus] Having Jetpack Components but not required
+  
+## Submission process
+  You can use this repository while you are developing the app. 
+  
+  To submit the test assignment please **close the issue "Assignment Done" in "issues" tab**.
+  
+  We will review the code **only after you close "Assignment Done" issue**.
 
 
 ## Requirement
@@ -25,16 +58,6 @@
 * Campaign List Screen
 * Favourite Screen
 * Detail Screen
-
-### Login Screen
-
-ประกอบด้วย
-
-1. Username - ต้องกรอก
-2. Password - ต้องกรอก
-3. Login - หาก username และ password เป็นค่าว่าง จะต้อง alert ออกมาด้วย
-
-อนุญาติให้ทำ Fake Login ได้ แต่หาก Login เข้าไปแล้ว หลังจากเปิดแอปมาใหม่ต้องไม่ผ่านหน้า Login อีกต่อไปแล้ว
 
 ### Dashboard Screen
 
