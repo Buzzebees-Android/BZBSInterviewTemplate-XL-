@@ -44,13 +44,12 @@ GET https://firebasestorage.googleapis.com/v0/b/android-interview-test.appspot.c
 ## Application requirements
 
 แอปพลิเคชันประกอบไปด้วย
-* Login Screen
-* Dashboard Screen
-* Campaign List Screen
-* Favourite Screen
-* Detail Screen
+ * Login Screen
+ * Dashboard Screen
+ * Campaign List Screen
+ * Favourite Screen
+ * Detail Screen
 
-```
 ### Dashboard Screen
 
 เป็น Dynamic Content โดยรเรียก JSON จาก url 
@@ -66,9 +65,7 @@ https://firebasestorage.googleapis.com/v0/b/android-interview-test.appspot.com/o
 * big campaign
 
 คลิกที่ไอเทมแต่ละอันจะเปิดหน้า Detail
-```
 
-```
 ### Campaign List Screen
 
 เป็น Dynamic Content โดยรเรียก JSON จาก url 
@@ -76,9 +73,7 @@ https://firebasestorage.googleapis.com/v0/b/android-interview-test.appspot.com/o
 https://xxxxxxxxxxxxxx
 
 คลิกที่ไอเทมแต่ละอันจะเปิดหน้า Detail
-```
 
-```
 ### Detail Screen
 
 แสดงรายละเอียด Campaign ที่คลิกมาจากหน้า Dashboard หรือ Campaign List
@@ -89,8 +84,6 @@ Campaign ที่เป็น Favourite จะไปปรากฎที่ห
 ### Favourite Screen
 
 แสดงรายการ Campaign ทีเป็น Favourite
-```
-
 
 
 ## Submission process
