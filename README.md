@@ -54,6 +54,8 @@ GET https://firebasestorage.googleapis.com/v0/b/android-interview-test.appspot.c
 ## Application requirements
 ### Dashboard Screen
 
+![Dashboard](https://bitbucket.org/Bzb_Android_Team/exam_01/raw/84adcc49398d06d0eb05b3dfc8f1cf0489274c18/pictures/Home.png)
+
 The dashboard is a list of dashboard objects. Each dashboard object has its `type` to determine how they are rendered on the screen.
 
 In this project, you will work with the following types of the dashboard:
@@ -72,11 +74,15 @@ Users can click the change language button to change the display language of the
 
 ### Campaign List Screen
 
+![List](https://bitbucket.org/Bzb_Android_Team/exam_01/raw/84adcc49398d06d0eb05b3dfc8f1cf0489274c18/pictures/Campaigns.png)
+
 Display a grid of campaigns. Each item displays an image, name, price using `image_url`, `name`, and `price` respectively.
 
 By clicking a campaign, the app will navigate to Details Screen
 
 ### Detail Screen
+
+![Details](https://bitbucket.org/Bzb_Android_Team/exam_01/raw/84adcc49398d06d0eb05b3dfc8f1cf0489274c18/pictures/Details%201.png)
 
 Display the following details of a campaign
 
@@ -88,6 +94,8 @@ Display the following details of a campaign
 The heart button is a favourite button to mark this campaign as a favourite. 
 
 ### Favourite Screen
+
+![Favorite](https://bitbucket.org/Bzb_Android_Team/exam_01/raw/84adcc49398d06d0eb05b3dfc8f1cf0489274c18/pictures/Favorite.png)
 
 Display a grid of user favourite campaigns
 
