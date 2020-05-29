@@ -104,6 +104,6 @@ By clicking an item, the app will navigate to Details Screen
 ## Submission process
   You can use this repository while you are developing the app. 
   
-  To submit the test assignment please **create a pull request in "Pull request" tab**.
+  To submit the test assignment please **close the issue "Assignment Done" in "issues" tab**.
   
-  We will review your code **only after you create a pull request**.
+  We will review the code **only after you close "Assignment Done" issue**.
