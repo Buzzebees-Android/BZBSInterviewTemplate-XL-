@@ -31,12 +31,12 @@ Your final UI can look different from the design, but it should include the same
 
 To get the dashboard, please use 
 ```
-GET https://firebasestorage.googleapis.com/v0/b/android-interview-test.appspot.com/o/dashboard.json?alt=media&token=48371953-a998-4613-8791-e00c976335a2
+GET https://firebasestorage.googleapis.com/v0/b/android-interview-test.appspot.com/o/dashboard.json?alt=media&token=e49c0393-c604-406e-b2bd-7ba1597ca231
 ```
 
 To get the campaign list, please use
 ```
-GET https://firebasestorage.googleapis.com/v0/b/android-interview-test.appspot.com/o/dashboard.json?alt=media&token=48371953-a998-4613-8791-e00c976335a2
+GET https://firebasestorage.googleapis.com/v0/b/android-interview-test.appspot.com/o/campaigns.json?alt=media&token=88974393-18a9-4ae6-9a62-fded62144730
 ```
 
 ## Code requirements
