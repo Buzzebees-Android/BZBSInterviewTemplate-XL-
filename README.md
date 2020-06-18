@@ -1,6 +1,6 @@
 # BuzzeBees Android Assignment 
 
-## Deadline : (08/06/20)
+## Deadline : (dd/mm/yyyy)
 ## Confidential
 Please don't disclose this assignment with anyone. 
 
@@ -54,7 +54,7 @@ GET https://firebasestorage.googleapis.com/v0/b/android-interview-test.appspot.c
 ## Application requirements
 ### Dashboard Screen
 
-![Dashboard](https://github.com/Buzzebees/BZBSInterview02/blob/master/screenshots/Home.png?raw=true)
+![Dashboard](https://github.com/Buzzebees/BZBSInterviewTemplate/blob/master/screenshots/Home.png?raw=true)
 
 The dashboard is a list of dashboard objects. Each dashboard object has its `type` to determine how they are rendered on the screen.
 
@@ -74,7 +74,7 @@ Users can click the change language button to change the display language of the
 
 ### Campaign List Screen
 
-![List](https://github.com/Buzzebees/BZBSInterview02/blob/master/screenshots/Campaigns.png?raw=true)
+![List](https://github.com/Buzzebees/BZBSInterviewTemplate/blob/master/screenshots/Campaigns.png?raw=true)
 
 Display a grid of campaigns. Each item displays an image, name, price using `image_url`, `name`, and `price` respectively.
 
@@ -82,7 +82,7 @@ By clicking a campaign, the app will navigate to Details Screen
 
 ### Detail Screen
 
-![Details](https://github.com/Buzzebees/BZBSInterview02/blob/master/screenshots/Details%201.png?raw=true)
+![Details](https://github.com/Buzzebees/BZBSInterviewTemplate/blob/master/screenshots/Details%201.png?raw=true)
 
 Display the following details of a campaign
 
@@ -95,7 +95,7 @@ The heart button is a favourite button to mark this campaign as a favourite.
 
 ### Favourite Screen
 
-![Favorite](https://github.com/Buzzebees/BZBSInterview02/blob/master/screenshots/Favorite.png?raw=true)
+![Favorite](https://github.com/Buzzebees/BZBSInterviewTemplate/blob/master/screenshots/Favorite.png?raw=true)
 
 Display a grid of user favourite campaigns
 
