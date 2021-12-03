@@ -36,7 +36,7 @@ GET https://firebasestorage.googleapis.com/v0/b/android-interview-test.appspot.c
 
 To get the campaign list, please use
 ```
-GET https://firebasestorage.googleapis.com/v0/b/android-interview-test.appspot.com/o/campaigns.json?alt=media&token=c4aa376e-d07a-49fd-b6d3-a2dd52e9c47f
+GET https://firebasestorage.googleapis.com/v0/b/android-interview-test.appspot.com/o/campaigns.json?alt=media&token=2c4ae9ee-79f1-429e-8e68-47a176ec9348
 ```
 
 ## Code requirements
