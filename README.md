@@ -1,4 +1,4 @@
-# BuzzeBees Android Assignment 
+# BuzzeBees Android/Flutter Assignment 
 
 ## Deadline : (dd/mm/yyyy)
 ## Confidential
@@ -40,16 +40,16 @@ GET https://firebasestorage.googleapis.com/v0/b/android-interview-test.appspot.c
 ```
 
 ## Code requirements
- * The app must be written in Kotlin only
+ * The app must be written in Kotlin (for Android) or Dart (for Flutter)
  * We prefer MVVM architecture, but you can use MVP
  * We prefer to use a dependency injection framework
  * We prefer scalable, maintainable and testable code
  * Having Unit tests would be a plus but not required
  * Having database cache would be a plus but not required
- * **[Bonus]** Using Kotlin Coroutine would be a plus but not required
- * **[Bonus]** Using Koin or Dagger as a dependency injection framework would be a plus but not required
- * **[Bonus]** Having Jetpack Components would be a plus but not required
-* **[Bonus]** Having some unit test
+ * **[Bonus for Android]** Using Kotlin Coroutine would be a plus but not required
+ * **[Bonus for Android]** Using Koin or Dagger as a dependency injection framework would be a plus but not required
+ * **[Bonus for Android]** Having Jetpack Components would be a plus but not required
+ * **[Bonus]** Having some unit test
 
 ## Application requirements
 ### Dashboard Screen
