@@ -20,7 +20,7 @@ Since we are making a high-quality application, we should handle all possible ca
 
 Please refer to this link
 ```
-https://www.figma.com/file/F5bUJNmMG4XwXucXfad1xW/Buzzebees-Android-Test?node-id=0%3A1
+https://www.figma.com/file/F5bUJNmMG4XwXucXfad1xW/Buzzebees-Android-Test?type=design&node-id=1770%3A1666&t=MaBzo91AXw4mTAci-1
 ```
 Your final UI can look different from the design, but it should include the same information we provided.
 
