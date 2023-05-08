@@ -1,6 +1,5 @@
 # BuzzeBees Android/Flutter Assignment 
 
-## Deadline : (dd/mm/yyyy)
 ## Confidential
 Please don't disclose this assignment with anyone. 
 
@@ -11,11 +10,9 @@ We plan to launch a privileged app. Your responsibility is to create the project
 
 Your task is to create a Buzzebees privileged app. The app has two main pages, Main Page and Details Page
  
-The app main page consists of 3 sub-pages, Dashboard, Campaigns, and Favorites. The top section shows the pages' name and the bottom shows a Bottom Navigation Bar. When a user clicks a campaign, it navigates to the campaign's details page. Additionally, users can change a display language by clicking the change language button on the top of the page.
+The app main page consists of 5 sub-pages, Dashboard, Campaigns, Collect Point, Favorites and My Account. The top section shows the pages' name and the bottom shows a Bottom Navigation Bar. When a user clicks a campaign, it navigates to the campaign's details page.
 
-To create a good user experience, before you get a response from API, you need to show loading progress. In case of any connection issues, you have to show a "no connection screen" that includes the "no connection" image, message, and "try again" button. By clicking on the button, it will load the data again.
-
-The details page display the details of the selected campaign from the main page. It has a favourite button to mark the campaign as a favourite. You have to implement your mechanics to mark the campaign.
+The details page display the details of the selected campaign from the main page. It has a favourite button to mark the campaign as a favourite. You have to implement your own mechanics to mark the campaign.
 
 Since we are making a high-quality application, we should handle all possible cases properly (no internet connection, showing loading progress, support screen rotation, error handling)
 
@@ -31,24 +28,23 @@ Your final UI can look different from the design, but it should include the same
 
 To get the dashboard, please use 
 ```
-GET https://firebasestorage.googleapis.com/v0/b/android-interview-test.appspot.com/o/dashboard.json?alt=media&token=e49c0393-c604-406e-b2bd-7ba1597ca231
+curl --location 'https://firebasestorage.googleapis.com/v0/b/android-interview-test.appspot.com/o/dashboard.json?alt=media&token=7ce93fe2-7f99-46fa-88ac-5a1e0e123bb0'
 ```
 
 To get the campaign list, please use
 ```
-GET https://firebasestorage.googleapis.com/v0/b/android-interview-test.appspot.com/o/campaigns.json?alt=media&token=2c4ae9ee-79f1-429e-8e68-47a176ec9348
+curl --location 'https://firebasestorage.googleapis.com/v0/b/android-interview-test.appspot.com/o/campaigns.json?alt=media&token=13af3b54-6b36-416c-a42d-483f0acea6ad'
 ```
 
 ## Code requirements
  * The app must be written in Kotlin (for Android) or Dart (for Flutter)
- * We prefer MVVM architecture, but you can use MVP
- * We prefer to use a dependency injection framework
+ * We prefer MVVM architecture, but you can use MVP/MVC
  * We prefer scalable, maintainable and testable code
- * Having Unit tests would be a plus but not required
- * Having database cache would be a plus but not required
- * **[Bonus for Android]** Using Kotlin Coroutine would be a plus but not required
- * **[Bonus for Android]** Using Koin or Dagger as a dependency injection framework would be a plus but not required
- * **[Bonus for Android]** Having Jetpack Components would be a plus but not required
+ * **[Bonus for Android]** Using Kotlin Coroutine
+ * **[Bonus for Android]** Using Koin or Hilt as a dependency injection framework
+ * **[Bonus for Android]** Having Jetpack Compose
+ * **[Bonus for Flutter]** State Management
+ * **[Bonus]** Having local database
  * **[Bonus]** Having some unit test
 
 ## Application requirements
@@ -70,15 +66,29 @@ campaign_rotate | small | Display a horizontal list of dashboards. Like a big ca
 
 By clicking a dashboard item, the app will navigate to Details Screen.
 
-Users can click the change language button to change the display language of the app.
-
 ### Campaign List Screen
 
 ![List](https://github.com/Buzzebees/BZBSInterviewTemplate/blob/master/screenshots/Campaigns.png?raw=true)
 
 Display a grid of campaigns. Each item displays an image, name, price using `image_url`, `name`, and `price` respectively.
 
-By clicking a campaign, the app will navigate to Details Screen
+By clicking a campaign, the app will navigate to Details Screen.
+
+### Collect Points Screen
+
+Display user's barcode and qr code. This is a static page
+
+### Favourite Screen
+
+![Favorite](https://github.com/Buzzebees/BZBSInterviewTemplate/blob/master/screenshots/Favorite.png?raw=true)
+
+Display a grid of user's favourite campaigns.
+
+By clicking an item, the app will navigate to Details Screen.
+
+### My Account Screen
+
+Display user information and other menus. This is a static page
 
 ### Detail Screen
 
@@ -90,20 +100,15 @@ Display the following details of a campaign
 * Name
 * Price
 * Description
+* Favorite Button
+* Redeem Button
 
-The heart button is a favourite button to mark this campaign as a favourite. 
-
-### Favourite Screen
-
-![Favorite](https://github.com/Buzzebees/BZBSInterviewTemplate/blob/master/screenshots/Favorite.png?raw=true)
-
-Display a grid of user favourite campaigns
-
-By clicking an item, the app will navigate to Details Screen
+By clicking the favorite button, you add a campaign to user's favorite campaigns.
+The redeem button do nothing.
 
 ## Submission process
   You can use this repository while you are developing the app. 
   
   To submit the test assignment please **close the issue "Assignment Done" in "issues" tab**.
   
-  We will review the code **only after you close "Assignment Done" issue**.
+  We will review the code **only after you close "Assignment Done"**.
