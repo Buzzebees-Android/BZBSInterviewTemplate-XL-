@@ -10,7 +10,7 @@ We plan to launch a privileged app. Your responsibility is to create the project
 
 Your task is to create a Buzzebees privileged app. The app has two main pages, Main Page and Details Page
  
-The app main page consists of 5 sub-pages, Dashboard, Campaigns, Collect Point, Favorites and My Account. The top section shows the pages' name and the bottom shows a Bottom Navigation Bar. When a user clicks a campaign, it navigates to the campaign's details page.
+The app main page consists of 5 sub-pages, Home, Rewards, Collect Point, Favorites and My Account. The top section shows the pages' name and the bottom shows a Bottom Navigation Bar. When a user clicks a campaign, it navigates to the campaign's details page.
 
 The details page display the details of the selected campaign from the main page. It has a favourite button to mark the campaign as a favourite. You have to implement your own mechanics to mark the campaign.
 
@@ -48,9 +48,9 @@ curl --location 'https://firebasestorage.googleapis.com/v0/b/android-interview-t
  * **[Bonus]** Having some unit test
 
 ## Application requirements
-### Dashboard Screen
+### Home Screen
 
-![Dashboard](https://github.com/Buzzebees/BZBSInterviewTemplate/blob/master/screenshots/Home.png?raw=true)
+![Home](https://github.com/Buzzebees-Android/BZBSInterviewTemplate-XL-/blob/master/screenshots/Home.png?raw=true)
 
 The dashboard is a list of dashboard objects. Each dashboard object has its `type` to determine how they are rendered on the screen.
 
@@ -66,21 +66,23 @@ campaign_rotate | small | Display a horizontal list of dashboards. Like a big ca
 
 By clicking a dashboard item, the app will navigate to Details Screen.
 
-### Campaign List Screen
+### Rewards Screen
 
-![List](https://github.com/Buzzebees/BZBSInterviewTemplate/blob/master/screenshots/Campaigns.png?raw=true)
+![Rewards](https://github.com/Buzzebees-Android/BZBSInterviewTemplate-XL-/blob/master/screenshots/Campaigns.png?raw=true)
 
 Display a grid of campaigns. Each item displays an image, name, price using `image_url`, `name`, and `price` respectively.
 
 By clicking a campaign, the app will navigate to Details Screen.
 
-### Collect Points Screen
+### Collecting Points Screen
 
 Display user's barcode and qr code. This is a static page
 
+![Collecting Points](https://github.com/Buzzebees-Android/BZBSInterviewTemplate-XL-/blob/master/screenshots/Collecting%20Points.png?raw=true)
+
 ### Favourite Screen
 
-![Favorite](https://github.com/Buzzebees/BZBSInterviewTemplate/blob/master/screenshots/Favorite.png?raw=true)
+![Favorite](https://github.com/Buzzebees-Android/BZBSInterviewTemplate-XL-/blob/master/screenshots/Favorite.png?raw=true)
 
 Display a grid of user's favourite campaigns.
 
@@ -90,9 +92,11 @@ By clicking an item, the app will navigate to Details Screen.
 
 Display user information and other menus. This is a static page
 
+![My Account](https://github.com/Buzzebees-Android/BZBSInterviewTemplate-XL-/blob/master/screenshots/My%20Account.png?raw=true)
+
 ### Detail Screen
 
-![Details](https://github.com/Buzzebees/BZBSInterviewTemplate/blob/master/screenshots/Details%201.png?raw=true)
+![Details](https://github.com/Buzzebees-Android/BZBSInterviewTemplate-XL-/blob/master/screenshots/Details.png?raw=true)
 
 Display the following details of a campaign
 
